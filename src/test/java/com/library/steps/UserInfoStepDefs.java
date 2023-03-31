@@ -55,9 +55,7 @@ public class UserInfoStepDefs {
     public void execute_query_to_get_all_columns() {
 
         DB_Util.runQuery("select * from users");
-
         actualList = DB_Util.getAllColumnNamesAsList();
-
         System.out.println("actualList = " + actualList);
 
     }
